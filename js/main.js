@@ -7,12 +7,13 @@ const app = new Vue (
         el: "#container",
         // - nella sezione 'data' inserisco le variabili come OGGETTI utili per l'esecuzione del codice;
         data: {
-            // - la stringa VALORE della CHIAVE 'message' sarà il contenuto dell'elemento HTML a cui abbiamo dato l'attributo 'v-model'(solo ai tag di tipo input);
+            // - la stringa VALORE della CHIAVE 'message' sarà il contenuto dell'elemento HTML a cui abbiamo dato la direttiva 'v-model'(solo ai tag di tipo input).
             message: "Hello Vue!",
+
+            // BONUS.1 Aggiungere alla pagina un’immagine, presa anch’essa da un data:
+            // - la stringa VALORE della CHIAVE 'img' sarà il contenuto dell'elemento HTML a cui abbiamo dato la direttiva 'v-bind'.
+            img: "https://store.modamerceria.it/1001-thickbox_default/smile-faccina-emoticon-emoji-occhiolino-patch-piccola.jpg",
         }
     }
 );
 
-
-// Bonus:
-// Aggiungere alla pagina un’immagine, presa anch’essa da un data.

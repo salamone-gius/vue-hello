@@ -19,6 +19,11 @@
 
             <!-- posso prendere il VALORE della CHIAVE 'message' anche soltanto attraverso la sintassi con i doppi baffi -->
             <h1>{{message}}</h1>
+
+            <!-- con la DIRETTIVA 'v-bind' (v-bind:ATTRIBUTO="VARIABILE IN DATA") posso aggiungere ATTRIBUTI agli elementi HTML -->
+            <img v-bind:src="img" alt="">
+            <!-- forma contratta = ':ATTRIBUTO="VARIABILE IN DATA"' -->
+
         </div>
 
         <script src="js/main.js"></script>
