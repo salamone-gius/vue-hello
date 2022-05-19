@@ -24,4 +24,9 @@ h1 {
 
 img {
     width: 200px;
+    margin-top: 40px;
+}
+
+input {
+    margin-left: 20px;
 }

@@ -14,15 +14,23 @@
         <!-- do un id all'elemento che voglio collegare ad 'app' per agganciarlo attraverso la CHIAVE 'el' -->
         <div id="container">
 
+            <label>Inserisci del testo</label>
+
             <!-- do un attributo 'v-model="CHIAVE"' all'elemento collegato ad 'app'. Il contenuto sarà il VALORE  della CHIAVE 'message' -->
             <input class="title" v-model="message"></input>
 
             <!-- posso prendere il VALORE della CHIAVE 'message' anche soltanto attraverso la sintassi con i doppi baffi -->
             <h1>{{message}}</h1>
 
+            <label>Inserisci URL di un'immagine</label>
+
+            <input class="image" v-model="img"></input>
+
+            <div>
             <!-- con la DIRETTIVA 'v-bind' (v-bind:ATTRIBUTO="VARIABILE IN DATA") posso aggiungere ATTRIBUTI agli elementi HTML -->
             <img v-bind:src="img" alt="">
             <!-- forma contratta = ':ATTRIBUTO="VARIABILE IN DATA"' -->
+            </div>
 
         </div>
 
